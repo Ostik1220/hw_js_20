@@ -45,9 +45,11 @@ addButton.addEventListener("click", () => {
       let red = Math.round(Math.random() * (255 - 0) + 0);
       let green = Math.round(Math.random() * (255 - 0) + 0);
       let blue = Math.round(Math.random() * (255 - 0) + 0);
+      let width = 30 + i * 10 + "px"
+      let height = 30 + i * 10 + "px"
       const box = document.createElement("div")
-      box.style.width = "30px"
-      box.style.height = "30px"
+      box.style.width = width
+      box.style.height = height
       box.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
       containre.append(box)
     }
